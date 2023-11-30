@@ -35,6 +35,10 @@ include frameworks/base/packages/SettingsLib/common.mk
 
 include $(BUILD_PACKAGE)
 
+LOCAL_OPTIONAL_USES_LIBRARIES := \
+    androidx.window.extensions \
+    androidx.window.sidecar
+
 include $(CLEAR_VARS)
 LOCAL_MODULE := default_permissions_org.omnirom.omnijaws.xml
 LOCAL_MODULE_CLASS := ETC
